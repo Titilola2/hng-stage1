@@ -43,20 +43,8 @@ footer {
 
 footer nav {
 text-decoration: underline;
-gap: 40px;
-justify-content: space-between;
 }
 
-.profile-picture {
-   width: 50%;
-   height: 50%;
-}
-
-.profile-picture img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 24px;
-}
 
 header, section, footer {
     margin-bottom: 20px;
