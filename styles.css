@@ -1,10 +1,9 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 0rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     background: linear-gradient(135deg, #f67396, #f9f7f8);
     color: rgb(52, 3, 19);
     font-family: Arial, sans-serif;
@@ -12,39 +11,51 @@ body {
 
 .container {
     display: flex;
-    width: 80vw;
-    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 800px;
+    text-align: center;
+}
+
+.profile-picture {
+    margin-top: 1vh;
+}
+
+.profile-picture img {
+  
+    border-radius: 50%;
 }
 
 .content {
-    width: 50%;
-    padding: 10px;
+   
+    padding: 0px;
+  
 }
 
 header h1 {
-    margin: 0; 
-    font-size: 4vw;
-    font-weight: bold; 
-    font-style: initial;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 section p {
-    font-size: 1.4vw;
+    font-size: 1.2em;
     text-decoration: underline;
 }
 
 section ul {
-    font-size: 1.4vw;;
+    font-size: 1em;
 }
 
 footer {
-    font-size: 1.vw;
+    margin-top: 20px;
+    font-size: 0.8em;
 }
 
 footer nav {
-text-decoration: underline;
+    text-decoration: underline;
 }
-
 
 header, section, footer {
     margin-bottom: 20px;
@@ -52,8 +63,8 @@ header, section, footer {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: circle;
+    padding: 0px;
 }
 
 a {
@@ -65,27 +76,30 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
 @media (max-width: 768px) {
+    ul {
+        list-style-type: circle;
+        padding: 10px;
+    }
+    
+
+    body {
+        padding: 10px;
+
+    }
     header h1 {
-        margin: 0; 
-        font-size: 4vw;
-        font-weight: bold; 
-        font-style: initial;
+        font-size: 3em;
     }
-    
+
     section p {
-        font-size: 1.7vw;
-        text-decoration: underline;
+        font-size: 1.2em;
     }
-    
+
     section ul {
-        font-size: 1.7vw;;
+        font-size: 1em;
     }
-    
+
     footer {
-        font-size: 1.7vw;
+        font-size: 1em;
     }
-   
 }
